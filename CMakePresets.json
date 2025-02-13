@@ -11,6 +11,9 @@
       "displayName": "Default Config",
       "description": "Default build using Unix generator",
       "generator": "Unix Makefiles",
+      "environment": {
+        "CMAKE_PREFIX_PATH": "$penv{CMAKE_PREFIX_PATH}:$penv{HOME}/Desktop/ros_motion/install:$penv{HOME}/.vcpkg-clion/vcpkg/installed/arm64-osx/share"
+      },
       "cacheVariables": {
         "COAL_HAS_QHULL": {
           "type": "BOOL",
@@ -27,10 +30,6 @@
         "COAL_BACKWARD_COMPATIBILITY_WITH_HPP_FCL": {
           "type": "BOOL",
           "value": "ON"
-        },
-        "CMAKE_PREFIX_PATH": {
-          "type": "STRING",
-          "value": "/Users/yangfeng/.vcpkg-clion/vcpkg/installed/arm64-osx/share"
         }
       }
     }

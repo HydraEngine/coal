@@ -2,7 +2,7 @@ build*/
 Xcode/*
 *~
 *.pyc
-
+cmake-build-*
 
 # pixi environments
 .pixi
